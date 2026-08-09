@@ -1,0 +1,21 @@
+  html,body{margin:0;padding:0;background:#000;overflow:hidden;height:100%;width:100%;
+    display:flex;align-items:center;justify-content:center;font-family:'Courier New',monospace;
+    touch-action:none;}
+  #wrap{position:relative;line-height:0;}
+  canvas{display:block;background:#050a1f;cursor:pointer;}
+  #topbar{position:absolute;top:10px;right:12px;display:flex;gap:8px;z-index:5;}
+  .ibtn{width:38px;height:38px;border-radius:8px;border:1px solid rgba(79,212,255,.4);
+    background:rgba(10,10,20,.6);color:#4fd4ff;font-size:15px;display:flex;align-items:center;
+    justify-content:center;cursor:pointer;user-select:none;backdrop-filter:blur(2px);font-weight:bold;}
+  .ibtn:active{background:rgba(79,212,255,.25);}
+  #touchpad{position:absolute;bottom:0;left:0;right:0;display:none;justify-content:space-between;
+    padding:0 18px 18px;box-sizing:border-box;z-index:5;pointer-events:none;}
+  #touchpad.show{display:flex;}
+  .tbtn{pointer-events:auto;width:64px;height:64px;border-radius:50%;
+    background:rgba(79,212,255,.14);border:1px solid rgba(79,212,255,.4);color:#4fd4ff;
+    font-size:26px;display:flex;align-items:center;justify-content:center;user-select:none;}
+  .tbtn:active{background:rgba(79,212,255,.32);}
+  #dpad{display:flex;gap:14px;}
+  #jumpbtn{width:78px;height:78px;font-size:15px;font-weight:bold;letter-spacing:1px;}
+  .ibtn:hover{background:rgba(79,212,255,.18);}
+  @media (hover:hover){ .ibtn:hover{transform:translateY(-1px);} }
